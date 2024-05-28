@@ -18,6 +18,8 @@ defmodule PageTitleReproWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/with-title", Reproduction.WithTitleLive
+    live "/without-title", Reproduction.WithoutTitleLive
   end
 
   # Other scopes may use custom stacks.
