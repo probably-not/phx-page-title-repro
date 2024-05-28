@@ -13,6 +13,11 @@ defmodule PageTitleReproWeb.Reproduction.WithTitleLive do
         Go to a page without a title!
       </.button>
     </.link>
+    <.link navigate={~p"/with-nil-title"}>
+      <.button>
+        Go to a page that sets its title to nil!
+      </.button>
+    </.link>
     """
   end
 end

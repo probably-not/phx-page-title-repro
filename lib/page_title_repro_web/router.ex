@@ -19,6 +19,7 @@ defmodule PageTitleReproWeb.Router do
 
     get "/", PageController, :home
     live "/with-title", Reproduction.WithTitleLive
+    live "/with-nil-title", Reproduction.WithNilTitleLive
     live "/without-title", Reproduction.WithoutTitleLive
   end
 
